@@ -1,0 +1,27 @@
+<div class="container">
+
+  <h3 class="d-flex justify-content-center">Online Energy Utility Platform </h3>
+  <h5 class="d-flex justify-content-center">Sisteme Distribuite</h5>
+
+  <nav class="navbar navbar-expand-sm bg-light navbar-dark">
+  <ul class="navbar-nav">
+
+
+      <li class="nav-item">
+          <button routerLink="userm"
+          class="m-1 btn btn-light btn-outline-primary" Button>Users</button>
+      </li>
+
+      <li class="nav-item">
+        <button routerLink="device"
+        class="m-1 btn btn-light btn-outline-primary" Button>Devices</button>
+    </li>
+  </ul>
+  </nav>
+
+<router-outlet></router-outlet>
+
+</div>
+
+
+<button (click)="backToLogin('login')">Go back to login page</button>

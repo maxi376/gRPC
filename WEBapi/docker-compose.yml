@@ -1,0 +1,25 @@
+version: '3.4'
+
+services:
+  webapi:
+    image: ${DOCKER_REGISTRY-}webapi
+    build:
+      context: .
+      dockerfile: WEBapi/Dockerfile
+  objective_brattain:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Password1!"
+      MSSQL_PID: Express
+    ports:
+      - "1433:1433"
+  angular10:
+    image: angular10
+    depends_on:
+      - webapi
+    build:
+      context: ./angular10
+      dockerfile: ./Dockerfile
+    ports:
+      - "5555:1234"

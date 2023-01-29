@@ -1,0 +1,18 @@
+<title>Login page!</title>
+
+<p>LOGINUL</p>
+
+<form>
+    <div class="form-group">
+      <label for="inputName1">Username</label>
+      <input type="email" class="form-control" id="inputUsername1" name="username" [(ngModel)]="username">
+
+    </div>
+    <div class="form-group">
+      <label for="inputPassword1">Password</label>
+      <input type="password" class="form-control" id="inputPassword1" name="password" [(ngModel)]="password">
+    </div>
+
+    <button type="submit" class="btn btn-primary" (click)="loginFunction('device','userm')">Login user</button>
+
+  </form>

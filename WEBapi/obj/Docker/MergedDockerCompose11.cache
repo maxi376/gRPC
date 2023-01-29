@@ -1,0 +1,38 @@
+name: dockercompose11182101751140209223
+services:
+  angular10:
+    build:
+      context: D:\Max\SD\tema1\incercareNr5\WEBapi
+      dockerfile: ./angular10/Dockerfile
+    image: angular10
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "4200"
+      protocol: tcp
+  objective_brattain:
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Express
+      SA_PASSWORD: Password1!
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    networks:
+      default: null
+  webapi:
+    build:
+      context: D:\Max\SD\tema1\incercareNr5\WEBapi
+      dockerfile: WEBapi/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: webapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+networks:
+  default:
+    name: dockercompose11182101751140209223_default

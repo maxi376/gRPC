@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "mssql2": {
+      "restored": true,
+      "restoreTime": "2023-01-10T12:21:45.4665696Z"
+    },
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2023-01-10T12:29:56.2094904Z"
+    }
+  },
+  "parameters": {
+    "mssql1.subscriptionId": {
+      "Name": "mssql1.subscriptionId",
+      "Type": "subscription",
+      "Value": "0c03dc85-4c79-4173-87b5-ab33f03ef3c9"
+    },
+    "mssql1.resourceGroupName": {
+      "Name": "mssql1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "MaximillianTimofte30244"
+    }
+  }
+}

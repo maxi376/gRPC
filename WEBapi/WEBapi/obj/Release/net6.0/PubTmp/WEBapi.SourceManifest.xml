@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="D:\Max\SD\tema1\incercareNr5\WEBapi\WEBapi\obj\Release\net6.0\PubTmp\Out\" />
+  <dbfullsql path="D:\Max\SD\tema1\incercareNr5\WEBapi\WEBapi\obj\Release\net6.0\PubTmp\EFSQLScripts\WEBapi.Models.UsermContext.sql" />
+</sitemanifest>
